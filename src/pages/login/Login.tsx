@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 import { AuthContext } from '../../contexts/AuthContext';
 import { ChangeEvent, useContext, useEffect, useState } from 'react';
-import UsuarioLogin from '../../model/UsuarioLogin';
+import type UsuarioLogin from '../../model/UsuarioLogin';
 import { RotatingLines } from 'react-loader-spinner';
 
 function Login() {
@@ -66,8 +66,7 @@ function Login() {
                     </div>
                     <button
                         type='submit'
-                        className="rounded bg-indigo-400 flex justify-center
-                                   hover:bg-indigo-900 text-white w-1/2 py-2">
+                        className="rounded bg-indigo-400 flex justify-center hover:bg-indigo-900 text-white w-1/2 py-2">
                                     
                         {isLoading ? <RotatingLines
                             strokeColor="white"
