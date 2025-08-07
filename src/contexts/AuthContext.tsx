@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useState } from "react"
+import { createContext, type ReactNode, useState } from "react"
 
 import type UsuarioLogin from "../model/UsuarioLogin"
 import { login } from "../services/service"
